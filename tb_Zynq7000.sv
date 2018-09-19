@@ -45,7 +45,7 @@ module tb_Zynq7000;
     end 
 
     // Send / receive
-    if(!socket_write(h, "Hello World !\n")) begin
+    if(!socket_write(h, "Hello World !")) begin
       $display("[ERROR] can't socket_write.");
       $stop();
     end
